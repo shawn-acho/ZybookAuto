@@ -2,6 +2,7 @@ from __future__ import annotations
 import os
 import sys
 import json
+'pip install requests'
 import requests
 import hashlib
 import random
@@ -13,8 +14,8 @@ from html.parser import HTMLParser
 import cfg
 
 # POST request to signin with credentials provided in cfg.py
-def signin(usr, pwd):
-    signin = requests.post("https://zyserver.zybooks.com/v1/signin", json={"email": usr, "password": pwd}).json()
+def signin(sacho@student.sdccd.edu,w5FgJbgFdJ7/ ):
+    signin = requests.post("https://zyserver.zybooks.com/v1/signin", json={"email": sacho@student.sdccd.edu, "password": w5FgJbgFdJ7/}).json()
     if not signin["success"]:
         raise Exception("Failed to sign in")
     return signin
